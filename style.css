@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  color: white;
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+}
+
+#centernav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 5px;
+}
+
+#leftnav {
+  margin: 0px 3px;
+}
+
+#rightnav {
+  text-align: right;
+  margin: 0px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightnav input {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  height: 20px;
+  margin: 0px 2px;
+  padding: 0px 5px;
+}
+
+.teamCardContainer,
+.teamCardbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 50px 50px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.teams {
+  width: 18rem;
+  height: 48vh;
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px 20px;
+  border-radius: 16px;
+}
+
+.teams:hover img {
+  height: 180px;
+  width: 180px;
+  transition: all 0.8s ease-in-out;
+}
+
+.sec2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.playersCard {
+  height: 48vh;
+  width: 80%;
+  background-size: cover;
+  margin: 25px auto;
+  border-radius: 10px;
+}
+
+.playersCard img {
+  height: 80%;
+  width: 100%;
+  align-items: center;
+}
+
+.playersCard a {
+  text-decoration: none;
+}
+
+.iplsquad {
+  background: -webkit-linear-gradient(
+    180deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+}
+
+.iplsquaddiv {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewAll {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 8px;
+  position: relative;
+  top: 20px;
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  color: white;
+}
+
+.playersCard ul {
+  list-style-type: none;
+  /* background: linear-gradient(180deg, #0078BC 0%, #17479E 100%); */
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 8%;
+  width: 100%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.playersCard ul li:nth-child(1) {
+  font-size: 1.8rem;
+  /* color: black; */
+  font-weight: bold;
+}
+
+.playersCard ul li span {
+  font-weight: bold;
+  margin: 0 4px;
+  font-size: 1.2rem;
+}
+
+.teams a {
+  text-decoration: none;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100%;
+}
+
+.teams img {
+  height: 10rem;
+  width: 10rem;
+  margin: auto;
+}
+
+.teams h5 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+.teams:hover h5 {
+  font-size: 1.5rem;
+  transition: all 0.8s ease-in-out;
+}
+
+.teams p {
+  font-size: 1.1rem;
+}
+
+.teams div {
+  font-size: 1.1rem;
+  margin: 7px auto;
+  border: 1px solid red;
+  width: fit-content;
+  padding: 5px 5px;
+  border-radius: 15px;
+  color: rgb(170, 126, 14);
+  background-color: white;
+}
+
+.fa-trophy {
+  color: goldenrod;
+  margin: 0px 3px;
+}
+
+.navbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 30px 0px 0px 0px;
+}
+.navbar2 img {
+  height: 85px;
+  width: 85px;
+}
+
+.formContainer {
+  margin: 40px auto 0;
+  height: 150px;
+  width: 300px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px inset lightslategray;
+  font-weight: bold;
+  /* text-align: center; */
+  display: none;
+}
+
+.formContainer form input {
+  margin: 5px;
+}
+
+.formContainer form {
+  margin: 10px;
+}
+
+.formContainer form label {
+  font-size: 1.2rem;
+}
+
+#subbtn {
+  margin-left: 25%;
+  font-size: 1rem;
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  /* background: linear-gradient(92.04deg,#98b3bb 24.18%,#466bab 50.95%,#1A3C93 110.32%); */
+  color: white;
+  outline: none;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+#dlbtn {
+  margin-left: 5%;
+  font-size: 1rem;
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  /* background: linear-gradient(92.04deg,#98b3bb 24.18%,#466bab 50.95%,#1A3C93 110.32%); */
+  color: white;
+  outline: none;
+  border: none;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+#fname,
+#role,
+#fteam {
+  outline: none;
+  border: none;
+}
+
+.teamBanner {
+  background-image: url("https://www.iplt20.com/assets/images/ipl-og-image-new.jpg");
+  width: 100%;
+  /* height: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+}
+
+.selectedteam {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cont {
+  padding: 15px;
+  display: flex;
+  background: linear-gradient(
+    92.04deg,
+    #98b3bb 24.18%,
+    #466bab 50.95%,
+    #1a3c93 110.32%
+  );
+  color: white;
+}
+
+.logo {
+  height: 180px;
+  width: 180px;
+}
+
+.cont div h2 {
+  font-size: 3rem;
+}
+
+.cont div:last-child {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0px 0px 0px 20px;
+}
+
+.trophy {
+  margin: 10px;
+  width: 100%;
+  padding-top: 5px;
+  margin: 8px 0;
+}
+
+.trophy i {
+  width: fit-content;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 15px;
+  padding: 0px 5px;
+}
+
+.trophy ul {
+  margin: 20px 0px;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.trophy ul li {
+  margin: 5px 0px;
+}
+
+.trophy ul li span {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.officialsite {
+  height: 30px;
+  width: 300px;
+  font-size: 1.5rem;
+  /* background-color: #EF4123; */
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  border-radius: 8px;
+  color: white;
+  padding: 5px;
+  margin: 8px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.playersec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerImg {
+  width: 50%;
+  text-align: right;
+}
+
+.playerImg img {
+  width: 50%;
+}
+
+.playerabout {
+  width: 80%;
+}
+
+.playerabout h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.playerabout ul li {
+  list-style-type: none;
+  font-size: 2.3rem;
+  color: white;
+}
+
+footer {
+  margin: 50px 0 0 0;
+}
+
+footer div {
+  background: linear-gradient(
+    92.04deg,
+    #18184a 24.18%,
+    #19398a 50.95%,
+    #18184a 110.32%
+  );
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer div ul {
+  margin: 0px auto;
+}
+
+footer div ul h1 {
+  margin: 15px 0;
+  font-size: 1.8rem;
+}
+
+footer div ul li {
+  list-style-type: none;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+footer div ul li:last-child {
+  margin-bottom: 50px;
+}
